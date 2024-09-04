@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(140deg, #418dbf, #9b44be);
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 10px 10px 25px rgb(125, 69, 97);
+    flex-direction: row;
+}
+
+.container .title-1 {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .title-1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 7px;
+    background: linear-gradient(135deg, #418dbf, #9b44be);
+}
+
+.container .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(50% - 10px);
+}
+
+form .input-box label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 1px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #9b44be;
+}
+
+.container .title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.gender-details {
+    width: 80%;
+    margin: 14px 0;
+}
+
+.gender-details .title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.gender-details .options {
+    display: flex;
+    flex-direction: row;
+}
+
+.gender-details .options label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.gender-details input[type="radio"] {
+    display: none;
+}
+
+.gender-details .options label::before {
+    content: "";
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-inline-start: 20px;
+    background: #e7e5e5;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.gender-details input[type="radio"]:checked+label::before {
+    background: #9b44be;
+    border-color: #e7e5e5;
+}
+
+form .button {
+    height: 45px;
+    margin: 35px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    border: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #418dbf, #9b44be);
+}
+
+form .button input:hover {
+    background: linear-gradient(-135deg, #418dbf, #9b44be);
+}
+
+@media (max-width:700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:300px) {
+    body {
+        flex-direction: column;
+    }
+}
