@@ -13,14 +13,13 @@ body {
   align-items: center;
   background: linear-gradient(140deg, #418dbf, #9b44be);
 }
-
 .container {
   width: 400px;
   height: 400px;
   padding: 20px;
   background: #fff;
   border-radius: 15px;
-  box-shadow: 10px 10px 25px rgb(125, 69, 97);
+  box-shadow: 5px 5px 25px rgb(125, 69, 97);
   display: flex;
   flex-direction: column;
   align-items: center;
